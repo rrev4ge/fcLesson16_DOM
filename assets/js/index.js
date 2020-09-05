@@ -1,66 +1,65 @@
 "use strict";
 
-// const buttonElem = document.getElementById("btn");
-// const divElem = document.querySelector("div");
-// const bodyElem = document.querySelector("body");
-// //buttonElem.dispatchEvent(new MouseEvent("mouseenter"))
-// const first = document.getElementById("firstI");
-// function buttonClickHandler(event) {
-//  // console.log(event);
-//   console.log("you pressed the button!");
-//  // console.dir(event.currentTarget);
-//   document.getElementById("reset").setAttribute("value", "1234567");
-//   const first = document.getElementById("firstI");
-//   const second = document.getElementById("secondI")
-//   document.getElementById("firstI").setAttribute("value", second.value);
-//   document.getElementById("secondI").setAttribute("value", first.value);
-//   //buttonElem.removeEventListener("mouseenter", buttonClickHandler);
-// }
+const buttonElem = document.getElementById("btn");
+const divElem = document.querySelector("div");
+const bodyElem = document.querySelector("body");
+//buttonElem.dispatchEvent(new MouseEvent("mouseenter"))
+const first = document.getElementById("firstI");
+function buttonClickHandler(event) {
+  console.log("you pressed the button!");
+ // console.dir(event.currentTarget);
+  document.getElementById("reset").setAttribute("value", "1234567");
+  const first = document.getElementById("firstI");
+  const second = document.getElementById("secondI")
+  document.getElementById("firstI").setAttribute("value", second.value);
+  document.getElementById("secondI").setAttribute("value", first.value);
+  //buttonElem.removeEventListener("mouseenter", buttonClickHandler);
+}
 
 
-// buttonElem.addEventListener("click", buttonClickHandler);
-// // divElem.addEventListener("click", buttonClickHandler);
-// // bodyElem.addEventListener("click", buttonClickHandler);
+buttonElem.addEventListener("click", buttonClickHandler);
+divElem.addEventListener("click", buttonClickHandler);
+bodyElem.addEventListener("click", buttonClickHandler);
 
 const list = document.getElementById("list");
 const item = document.getElementById("item");
 const div = document.getElementById("div");
 
-// function handler(event) {
-//   console.log(event.currentTarget.tagName);
-// }
+function handler(event) {
+  console.log(event.currentTarget.tagName);
+}
 
-// list.addEventListener("click", handler, true);
-// item.addEventListener("click", handler, true);
-// div.addEventListener("click", handler, true);
+list.addEventListener("click", handler, true);
+item.addEventListener("click", handler, true);
+div.addEventListener("click", handler, true);
 
 
-// function addValue(event) {
-//  // const input = document.getElementById("inp");
-// //  input.setAttribute("value", event.target.tagName);
-//   //console.log(event.target.tagName);
+function addValue(event) {
+ // const input = document.getElementById("inp");
+//  input.setAttribute("value", event.target.tagName);
+  //console.log(event.target.tagName);
 
-//   const [] = event;
-// }
+  const [] = event;
+}
 
-///this.addEventListener("click", addValue);
+/this.addEventListener("click", addValue);
 
 
 const btn = document.getElementById("btn");
 const span = document.getElementById("increment");
 
 
-// btn.addEventListener("click", (event) => {
-//   if (ctrlKey) {
-//       if (span.textContent === "") {
-//       span.textContent = 0;
-//       span.textContent++;
-//     } else {
-//       span.textContent = Number(span.textContent);
-//       span.textContent++;
-//     } else {
+btn.addEventListener("click", (event) => {
+  if (ctrlKey) {
+      if (span.textContent === "") {
+      span.textContent = 0;
+      span.textContent++;
+    } else {
+      span.textContent = Number(span.textContent);
+      span.textContent++;
+    } else {
     
-//   }
+  }
     
   
-// })
+})
