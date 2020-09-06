@@ -19,7 +19,7 @@ function createBookmarksTable() {
     tdValueLink.textContent = href;
     tdValue.append(tdValueLink);
   });
-  root.querySelector("DT").remove();
+  document.querySelector("DT").remove();
   document.querySelector("H1").textContent = "Bookmarks Table";
 }
 
