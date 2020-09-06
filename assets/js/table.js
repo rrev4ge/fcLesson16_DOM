@@ -16,7 +16,7 @@ function createBookmarksTable() {
     const tdValueLink = document.createElement("a");
     tdName.textContent = textContent;
     tdValueLink.href = href;
-    tdValueLink.textContent = tdValueLink.href;
+    tdValueLink.textContent = href;
     tdValue.append(tdValueLink);
   });
   root.querySelector("DT").remove();
