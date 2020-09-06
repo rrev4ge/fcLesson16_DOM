@@ -11,13 +11,17 @@ function createBookmarksTable() {
   contentArray.forEach((link) => {
     const tr = document.createElement("tr");
     const tdName = document.createElement("td");
+    const tdValueLink = document.createElement("a");
     const tdValue = document.createElement("td");
     tdName.textContent = link.textContent;
-    tdValue.textContent = link.href;
+    tdValueLink.href = link.href;
+    tdValueLink.textContent = tdValueLink.href;
     bookmarksTable.append(tr);
     tr.append(tdName, tdValue);
+    tdValue.append(tdValueLink);
   });
   root.querySelector("DT").remove();
+  document.querySelector("H1").textContent = "Bookmarks Table";
 }
 
 
