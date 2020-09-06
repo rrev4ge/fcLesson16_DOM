@@ -53,7 +53,7 @@ btn.addEventListener("click", (event) => {
   const {
     ctrlKey,
     shiftKey,
-
+    
   } = event;
   if (ctrlKey) {
     if (Number(span.textContent) > 0) {
