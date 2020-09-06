@@ -2,22 +2,21 @@
 
 window.addEventListener("load", createBookmarksTable, {once: true});
 
-
 function createBookmarksTable() {
   const root = document.querySelector("DL");
   const bookmarksTable = document.createElement("table");
   root.append(bookmarksTable);
   const contentArray = [...document.links];
   contentArray.forEach((link) => {
-    const tr = document.createElement("tr");
-    const tdName = document.createElement("td");
-    const tdValueLink = document.createElement("a");
-    const tdValue = document.createElement("td");
-    tdName.textContent = link.textContent;
-    tdValueLink.href = link.href;
-    tdValueLink.textContent = tdValueLink.href;
+    const {href, textContent} = link;
+    const tr = bookmarksTable.insertRow();
+    const tdName = tr.insertCell();
+    const tdValue = tr.insertCell();
     bookmarksTable.append(tr);
-    tr.append(tdName, tdValue);
+    const tdValueLink = document.createElement("a");
+    tdName.textContent = textContent;
+    tdValueLink.href = href;
+    tdValueLink.textContent = tdValueLink.href;
     tdValue.append(tdValueLink);
   });
   root.querySelector("DT").remove();
