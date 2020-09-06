@@ -1,6 +1,6 @@
 "use strict";
 
-window.addEventListener("load", createBookmarksTable, {once: true});
+window.addEventListener("DOMContentLoaded", createBookmarksTable, {once: true});
 
 function createBookmarksTable() {
   const root = document.querySelector("DL");
