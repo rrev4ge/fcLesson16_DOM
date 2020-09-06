@@ -8,6 +8,7 @@ function createBookmarks() {
   const linkArray = [...document.links];
   const contentArray = linkArray.map ( (elm) => {
     console.log("elem");
+    return elm
   })
 
 
