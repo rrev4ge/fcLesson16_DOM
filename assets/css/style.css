@@ -1,4 +1,4 @@
-/* ul, li, div {
+ul, li, div {
     
     border: 2px solid red;
     padding: 10px;
@@ -11,7 +11,7 @@ table {
 td {
     border: 1px solid black;
     padding: 3px;
-} */
+}
 
 
 .divTest1 {
